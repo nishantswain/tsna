@@ -1,0 +1,63 @@
+
+
+    
+
+<div class="login">
+    <div *ngIf="signupButton"class="">
+        <button type="button" class="btn btn-outline-secondary signup " (click)="onClickSignupButton()">Create An Account</button>
+    </div>
+        <div *ngIf="signupForm" class="loginCard">
+            <form action="" class="row ">
+            <div class="mb-1 row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Username</label>
+                <div class="col-sm-10">
+                  <input type="text"  class="form-control" id="staticEmail" value=""required>
+                </div>
+              </div>            
+            <div class="mb-1 row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email"  class="form-control" id="staticEmail" value="" required>
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label" required>Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword">
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-success" type="submit" (click)="onClickLogIn('signup')">Login</button>
+              </div>
+            </form>
+            </div>
+        
+    
+    <div *ngIf="loginButton" class="">
+        <button type="button" class="btn btn-outline-secondary signin" (click)="onClickLoginButton()">Login</button>
+       
+    </div>
+    <div *ngIf="loginForm" class="loginCard">
+        
+        <form action="" class="row ">
+            <div class="mb-1 row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Username</label>
+                <div class="col-sm-10">
+                  <input type="text"  class="form-control" id="staticEmail" value="" required>
+                </div>
+              </div>            
+            
+              <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword" required>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-success" type="submit" (click)="onClickLogIn('login')">Login</button>
+              </div>
+            </form>
+        
+        </div>
+    
+</div>

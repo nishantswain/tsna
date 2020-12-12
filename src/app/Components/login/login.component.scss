@@ -1,0 +1,66 @@
+h1 {
+  color: rebeccapurple;
+  font-weight: bold;
+  margin: auto;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  width: 90%;
+  margin-top: 200px;
+  // padding: 10px;
+//   border: solid 7px brown;
+
+  .signin {
+    margin-top: 10px;
+    width: 10%;
+  }
+
+  .signup {
+    width: 30%;
+  }
+
+}
+
+.loginCard {
+  margin: auto;
+  margin-top: 7px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  width: 60%;
+  height: 12em;
+  // margin-top: 200px;
+  padding: 10px;
+//   border: solid 2px steelblue;
+}
+
+mat-grid-tile {
+  background: lightblue;
+}
+
+.signup:hover {
+  color: white;
+  background-color:#4d004d;
+  border-color: #5bc2c2
+}
+
+.signin:hover {
+  color: white;
+  background-color:#800080;
+  border-color: white
+}
+.btn-success{
+  // background-color: #00e600;
+}
+.btn-success:hover{
+  color: white;
+  background-color:#004d00;
+  border-color: white
+}
